@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Portfolio</title>
+</head>
+<body>
+
+  <div class="send">
+    <div class="message">
+        <h1>My form</h1>
+       <form action="https://formspree.io/f/moqoekqd" method="post">
+        <input name="name" type="text" placeholder="Enter your name...">
+        <input name="email" type="email" placeholder="Enter your Email...">
+        <input name="phone" type="number" placeholder="Enter your Phone number...">
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+        <input class="message_send" type="submit" value="Send">
+       </form>
+       <input class="close" type="submit" value="Close">
+    </div>
+   
+  </div>
+
+
+ <div class="project_page">
+    <h1>I haven't any projects now</h1>
+    <div class="close_project"><i class="bi bi-x-circle"></i></div>
+ </div>
+
+
+<div class="about_page">
+   <div class="main">
+    <div class="s_main">
+    <div class="text">Hi I am Bahodir Qurbonov </div>
+    <div class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus tenetur dolore tempora expedita est nisi, molestiae dolorum dolores rerum, corrupti nostrum rem, asperiores praesentium veritatis corporis eius aperiam nihil at odit doloribus voluptatum soluta eveniet. Consectetur deserunt temporibus suscipit, non nemo iure officiis, accusantium earum in tempore exercitationem dolor quaerat facere vitae nulla commodi laudantium quo, dolorem velit nobis hic nisi eum quas sequi. Excepturi ut praesentium eligendi ullam!
+   </div>
+</div>
+    <div class="photo"></div>
+</div>
+</div>
+
+
+    <div class="home_page">
+    <div class="nav">
+        <div class="logo">Portfolio</div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About me</li>
+            <li>Skills</li>
+            <li>Contacts</li> 
+        </ul>
+        <div class="btn"></div>
+    </div>
+    <div class="home-grid">
+
+      <div class="grid_photo">
+        <div class="picture"></div>
+        <div class="text">A web developer
+            <div class="name">Bahodir Qurbonov</div>
+            I am a developer based in Uzbekistan.
+        </div>
+      </div>
+      
+      <div class="grid_about">
+        <div class="picture2"></div>
+       <div class="text"> About me <div class="more"> <i class="bi bi-file-plus"></i></div></div>
+      
+    </div>
+      <div class="grid_project">
+        <div class="video" >
+            
+        </div>
+        <div class="text">My projects <div class="more2"> <i class="bi bi-file-plus"></i></div></div>
+      </div>
+     
+</div>
+
+<div class="home-grid2">
+    <div class="grid_contacts">
+
+       <div class="icons">
+        <a class="a" href="https://t.me/nameBahodirQurbonov"><i class="bi bi-telegram"></i></a>
+        <a class="a"  href="instagram.com/bqurbonov463/"><i class="bi bi-instagram"></i></a>
+        <a class="a"  href=""><i class="bi bi-facebook"></i></a>
+       </div>
+        <div class="contact">Contacts</div>
+        <div class="small">If you have any work you can send me message</div>
+    </div>
+    <div class="grid_skills">
+        <div class="text">My Skills</div>
+        <div class="skill">
+            <div class="skill_name">HTML</div>
+            <div class="skill_bar">
+                <div class="skill_per" per="90%" style="max-width:90%" ;></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill_name">CSS</div>
+            <div class="skill_bar">
+                <div class="skill_per" per="60%" style="max-width:60%" ;></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill_name">Javascript</div>
+            <div class="skill_bar">
+                <div class="skill_per" per="16%" style="max-width:20%" ;></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid_send">
+        <div class="picture3"></div>
+      <button>Send message</button>
+    </div>
+</div>
+
+    </div>
+    
+</body>
+
+<script>
+
+    const btn = document.querySelector('.btn');
+    const home_page = document.querySelector('.home_page');
+    const logo = document.querySelector('.logo');
+    const menu = document.querySelector('.menu');
+    const text = document.querySelector('.text');
+    const grid_photo = document.querySelector('.grid_photo');
+    const name = document.querySelector('.name');
+    const grid_about = document.querySelector('.grid_about');
+    const grid_project = document.querySelector('.grid_project');
+    const video = document.querySelector('.video');
+    const picture2 = document.querySelector('.picture2');
+    const picture3 = document.querySelector('.picture3');
+    const grid_contacts = document.querySelector('.grid_contacts');
+    const icons = document.querySelector('.icons');
+    const grid_skills = document.querySelector('.grid_skills');
+    const grid_send = document.querySelector('.grid_send');
+    const send = document.querySelector('.send');
+    const message_send = document.querySelector('.message_send');
+    const close = document.querySelector('.close');
+    const project_page = document.querySelector('.project_page');
+    const about_page = document.querySelector('.about_page');
+    const close_project = document.querySelector('.close_project');
+    const more = document.querySelector('.more');
+    const more2 = document.querySelector('.more2');
+
+    
+   
+    more.onclick = function () 
+    {
+        about_page.style.display = 'block'
+    }
+
+    more2.onclick = function () 
+    {
+        project_page.style.display = 'block'
+    }
+    close_project.onclick = function () 
+    {
+        project_page.style.display = 'none'
+    }
+
+    grid_send.onclick = function ()
+    {
+         send.style.display = 'block'
+    }
+    
+    close.onclick = function ()
+    {
+         send.style.display = 'none'
+    }
+
+    
+    
+    
+    btn.onclick = function()
+    {
+        this.classList.toggle('active')
+        home_page.classList.toggle('active')
+        logo.classList.toggle('active')
+        menu.classList.toggle('active')
+        text.classList.toggle('active')
+        grid_photo.classList.toggle('active')
+        name.classList.toggle('active')
+        grid_about.classList.toggle('active')
+        grid_project.classList.toggle('active')
+        video.classList.toggle('active')
+        picture2.classList.toggle('active')
+        picture3.classList.toggle('active')
+        grid_contacts.classList.toggle('active')
+        icons.classList.toggle('active')
+        grid_skills.classList.toggle('active')
+        grid_send.classList.toggle('active')
+       
+        
+    }
+
+
+</script>
+
+</html>

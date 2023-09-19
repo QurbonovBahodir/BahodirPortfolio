@@ -1,0 +1,1306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.home_page {
+    /* background-color: white; */
+    width: 100%;
+    height: 100%;
+    border: 2px ;
+}
+
+
+
+.first_page {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    width: 100%;
+    height: 85px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 42px;
+    color: rgb(81, 81, 252);
+    margin-left: 50px;
+}
+
+
+.menu {
+   width: 650px;
+   height: auto;
+   top: 10px;
+   margin-right: 140px;
+   display: flex;
+   justify-content: space-between;
+   color: rgb(81, 81, 252);
+   
+}
+
+.menu li {
+    list-style: none;
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 20px;
+    transition: 2s;
+}
+
+
+
+.menu li:hover {
+    color: rgb(81, 81, 252);
+    letter-spacing: .18em;
+    cursor: pointer;
+    background: rgb(243, 239, 239);
+    border-radius: 8px;
+    text-shadow: 0 0 5px rgba(81, 81, 252, 0.836);
+}
+
+.nav .btn{
+    position: absolute;
+    width: 45px;
+    height: 24px;
+    right: 15px;
+    top: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    
+}
+
+.nav .btn::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    left: 0px;
+    top: 1%;
+    transform: translateY(-1%);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.5s;
+}
+
+
+.home-grid {
+    width: auto;
+    /* border: 1px solid black; */
+    height: 285px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 700px 320px auto ;
+    grid-template-rows: 265px 265px;
+  
+}
+.home-grid2 {
+    width: auto;
+    /* border: 1px solid black; */
+    height: 285px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 280px 710px auto ;
+    grid-template-rows: 265px 265px;
+    margin-top: 5px;
+}
+
+/* ---------------------------------------------===================================----------------------------------- */
+
+.grid_photo {
+   border-radius: 25px;
+    background-color: white;
+    border: 2px solid blue;
+    margin: 10px;
+    padding: 0px 20px;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+
+}
+
+
+.grid_photo .picture {
+    background-image: url(./img/Default_wolf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 210px;
+}
+
+.grid_photo .text {
+    font-size: 18px;
+    font-weight: 300;
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 440px;
+    margin-right: 15px;
+    padding: 10px 15px 20px 15px;
+}
+
+.grid_photo .text .name {
+    font-size: 36px;
+    color: rgb(81, 81, 252);
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.home-grid .grid_about {
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 10px;
+    padding: 20px 10px;
+    color: rgb(81, 81, 252);
+    border: 2px solid blue;
+   
+}
+
+
+.grid_about .picture2 {
+    background-image: url(./img/letter-qb-signature-logo-template-vector-2BMX0BF.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 280px;
+    /* border: 1px solid blue; */
+}
+
+.grid_about .text {
+    font-weight: 400;
+    /* border: 1px solid blue; */
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+
+ .text .more:hover {
+    cursor: pointer;
+    color: rgb(12, 49, 216);
+    padding: 0px 5px;
+    transition: 0.5s;
+}
+
+/* ---------------------------------------------===================================----------------------------------- */
+
+.home-grid .grid_project {
+    border: 2px solid blue;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 10px;
+    padding: 12px 10px;
+    color: rgb(81, 81, 252);
+    
+}
+
+.grid_project .video {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    width: 200px;
+    background-image: url(./img/html.png);
+    margin: 5px auto;
+}
+
+
+
+.grid_project .text {
+    font-weight: 400;
+    /* border: 1px solid blue; */
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+
+.text .more2:hover {
+    cursor: pointer;
+    color: rgb(12, 49, 216);
+    padding: 0px 5px;
+    transition: 0.5s;
+}
+/* ---------------------------------------------===================================----------------------------------- */
+
+.home-grid2 .grid_contacts{
+    border: 2px solid blue;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 10px;
+    padding: 12px 10px;
+    color: rgb(81, 81, 252);
+}
+
+.grid_contacts .icons {
+    font-size: 32px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20%;
+   color: rgb(24, 22, 22);
+}
+
+
+
+.grid_contacts .a:hover {
+    color: rgb(81, 81, 252);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.grid_contacts .contact {
+    font-size: 26px;
+    margin: 15px 20px 5px 20px;
+}
+
+.grid_contacts .small {
+    font-size: 18px;
+    margin: 5px 20px;
+}
+
+/* -------------------------------------------------=============================--------------------------- */
+
+.home-grid2 .grid_skills {
+    
+    margin: 10px;
+    border: 2px solid blue;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 10px;
+    padding-top: 8px ;
+    color: rgb(0, 0, 0) ;
+}
+
+.grid_skills.active {
+    color: white ;
+    border: 2px solid white;
+}
+
+.grid_skills .text {
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.grid_skills .skill {
+    width: 680px;
+    /* border: 1px solid black; */
+   margin: 0px 3px;
+   /* color: rgb(0, 0, 0); */
+}
+
+.skill .skill_name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+
+.skill .skill_bar {
+    height: 14px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(45, 83, 207);
+    width: 680px;
+    
+}
+
+.skill_per {
+    height: 14px;
+    background-color: rgb(45, 83, 207);
+    border-radius: 4px;
+    position: relative;
+    animation: fillBars 4s 1;
+}
+
+
+.skill_per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: rgb(78, 92, 218);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+
+
+
+
+.skill_per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(78, 92, 218);
+    top: -20;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+/* ---------------------------------------------===================================----------------------------------- */
+
+.home-grid2 .grid_send {
+    margin: 10px;
+    border: 2px solid blue;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 5px 10px;
+    color: black;
+    /* justify-content: center; */
+}
+
+
+.grid_send .picture3 {
+    background-image: url(./img/chat\ black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    width: 200px;;
+    margin: 10px auto;
+}
+
+.grid_send button {
+    font-size: 27px;
+    font-weight: 700;
+    background-color: rgb(78, 92, 218);
+    border-radius:26px ;
+    margin:0 55px;
+    padding: 4px;
+}
+
+.grid_send button:hover {
+    background-color: rgb(39, 90, 87);
+    color: white;
+    padding: 5px;
+    margin: 0 53px;
+    cursor: pointer;
+}
+
+
+
+/* ----------------------------------------------================================-------------------------------------=====================-------------------------- */
+
+.send {
+   background-color: rgba(63, 58, 58, 0.568);
+   width: 100%;
+   height: 100%;
+   display: none;
+   position:absolute;
+   z-index: 1;
+   
+   justify-content: center;
+   text-align: center;
+}
+
+.send .message {
+    width: 440px;
+    height: 550px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    background-color: rgb(20, 18, 18);
+    padding: 5px auto;
+    margin: 80px auto;
+
+}
+
+.send h1 {
+    color: white;
+    margin: 10px auto;
+}
+
+input {
+    width: 340px;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 340px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.message_send {
+    background-color: rgb(250, 8, 8);
+    border-radius: 25px;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.message_send:hover {
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.close {
+   
+    background-color: rgb(34, 29, 29);
+    border-radius: 30px;
+    color: rgb(221, 219, 219);
+    font-size: larger;
+    font-weight: 500;
+    width: 200px;
+    margin: 10px auto;
+    cursor: pointer;
+    
+}
+
+/* ----------------------------=======================----------------------------==============------------- */
+
+
+.project_page {
+    background-color: rgba(63, 58, 58, 0.568);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position:absolute;
+    justify-content: center;
+    text-align: center;
+}
+
+.project_page h1 {
+    color: white;
+    font-size: xx-large;
+    margin: 40px auto;
+}
+
+.project_page i {
+    font-size: 40px;
+    color: white;
+    margin-top: 50px;
+}
+
+.project_page i{
+    color: blueviolet;
+    cursor:nw-resize;
+    transition: 0.5s;
+}
+
+
+
+.about_page {
+    background-color: rgba(63, 58, 58, 0.568);
+    width: 100%;
+    height: 100%;
+    display: none;
+    position:absolute;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+
+.about_page .main {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.about_page .text {
+   
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.about_page .small {
+    margin: 10px 0;
+    color: white;
+    font-size: larger;
+    width: 600px;
+}
+
+.about_page .photo {
+    border: 1px solid red;
+    width: 500px;
+    height: 600px;
+    
+}
+
+
+/* ---------------------------------------------------- ACTIVE ---------------------------------------------- */
+
+.home_page.active {
+    background-color: black;
+}
+
+
+.logo.active {
+    color: white;
+} 
+
+.menu.active {
+    color: white;
+}
+
+.grid_photo.active {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+.text .name.active {
+    color: white;
+ }
+
+ 
+.grid_about.active {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn.active {
+    border: 2px solid white;
+}
+
+.btn.active::before {
+    left: 44%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;   
+}
+
+
+.grid_project.active {
+    color: white;
+    border: 2px solid white;
+}
+
+.video.active {
+    background-image: url(./img/html.white.png);
+}
+
+.picture2.active {
+    border-radius: 35px;
+    width: 220px;
+    margin: 0 auto;
+    border: 1px solid white;
+   
+}
+
+.grid_contacts.active {
+    border: 1px solid white;
+    color: white;
+}
+
+.grid_contacts .icons.active {
+    color: white;
+}
+
+.grid_send.active {
+    border: 2px solid white;
+    color: white;
+}
+
+.picture3.active {
+    background-image: url(./img/chat_white.png);
+}
+
+.grid_contacts .a.active {
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ------------------ MEDIA ------------------------------------------------------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 500px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    .home_page {
+        /* background-color: white; */
+        width: 100%;
+        height: 100%;
+        border: 1px ;
+    }
+    
+    
+    
+    .first_page {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .nav {
+        width: 100%;
+        height: 45px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-weight: 300;
+        font-size: 21px;
+        color: rgb(81, 81, 252);
+        margin-left: 15px;
+    }
+    
+    
+    .menu {
+       width: 300px;
+       height: auto;
+       top: 10px;
+       margin-right: 70px;
+       display: flex;
+       justify-content: space-between;
+       color: rgb(81, 81, 252);
+       
+    }
+    
+    .menu li {
+        list-style: none;
+        font-size: 14px;
+        font-weight: bolder;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 5px 10px;
+        transition: 2s;
+    }
+    
+    
+    
+    .menu li:hover {
+        color: rgb(81, 81, 252);
+        letter-spacing: .2em;
+        cursor: pointer;
+        background: rgb(243, 239, 239);
+        border-radius: 4px;
+        text-shadow: 0 0 5px rgba(81, 81, 252, 0.836);
+    }
+    
+    .nav .btn{
+        position: absolute;
+        width: 25px;
+        height: 12px;
+        right: 14px;
+        top: 15px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        
+    }
+    
+    .nav .btn::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 9px;
+        left: 0px;
+        top: 1%;
+        transform: translateY(-1%);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: black;
+        transition: 0.5s;
+    }
+    
+    
+    .home-grid {
+        width: auto;
+        /* border: 1px solid black; */
+        height: 142px;
+        padding-top: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .home-grid2 {
+        width: auto;
+        /* border: 1px solid black; */
+        height: 142px;
+        padding-top: 0px;
+        padding-left: 5px;
+        padding-right: 5px;     
+        margin-top: 210px;
+    }
+    
+    /* ---------------------------------------------===================================----------------------------------- */
+    
+    .grid_photo {
+       border-radius: 12px;
+        background-color: white;
+        border: 1px solid blue;
+        margin: 5px;
+        padding: 0px 10px;
+        align-items: center;
+        display: flex;
+        justify-content:space-between;
+        width: 450px;
+        height: 180px;
+    }
+    
+    
+    .grid_photo .picture {
+        background-image: url(./img/Default_wolf.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        /* border: 1px solid red; */
+        height: 150px;
+        width: 160px;
+    }
+    
+    .grid_photo .text {
+        font-size: 12px;
+        font-weight: 200;
+        border: 1px solid red;
+        height: 150px;
+        width: 220px;
+        margin-top: 10px;
+        margin-left: 168px;
+        padding: 5px 7px 10px 7px;
+        position: absolute;
+    }
+    
+    .grid_photo .text .name {
+        font-size: 22px;
+        color: rgb(81, 81, 252);
+        font-weight: 200;
+        margin-bottom: 7px;
+    }
+    
+    .home-grid .grid_about {
+        height: 180px;
+        width: 200px;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        margin: 5px;
+        padding: 10px 5px;
+        color: rgb(81, 81, 252);
+        border: 1px solid blue;
+        position: absolute;
+        top: 240px;
+    }
+    
+    
+    .grid_about .picture2 {
+        background-image: url(./img/letter-qb-signature-logo-template-vector-2BMX0BF.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 70px;
+        width: 120px;
+        /* border: 1px solid blue; */
+    }
+    
+    .grid_about .text {
+        font-weight: 200;
+        /* border: 1px solid blue; */
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin-top: 3px;
+    }
+    
+     .text .more:hover {
+        cursor: pointer;
+        color: rgb(12, 49, 216);
+        padding: 0px 3px;
+        transition: 0.5s;
+    }
+    
+    /* ---------------------------------------------===================================----------------------------------- */
+    
+    .home-grid .grid_project {
+        border: 1px solid blue;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        margin: 5px;
+        padding: 6px 5px;
+        color: rgb(81, 81, 252);
+        
+    }
+    
+    .grid_project .video {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 70px;
+        width: 100px;
+        background-image: url(./img/html.png);
+        margin: 3px auto;
+    }
+    
+    
+    
+    .grid_project .text {
+        font-weight: 200;
+        /* border: 1px solid blue; */
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        margin-top: 3px;
+    }
+    
+    .text .more2:hover {
+        cursor: pointer;
+        color: rgb(12, 49, 216);
+        padding: 0px 3px;
+        transition: 0.5s;
+    }
+    /* ---------------------------------------------===================================----------------------------------- */
+    
+    .home-grid2 .grid_contacts{
+        border: 1px solid blue;
+        border-bottom-right-radius: 15px;
+        border-top-left-radius: 15px;
+        margin: 5px;
+        padding: 6px 5px;
+        color: rgb(81, 81, 252);
+    }
+    
+    .grid_contacts .icons {
+        font-size: 16px;
+        padding: 0px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10%;
+       color: rgb(24, 22, 22);
+    }
+    
+    
+    
+    .grid_contacts .a:hover {
+        color: rgb(81, 81, 252);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .grid_contacts .contact {
+        font-size: 13px;
+        margin: 7px 10px 3px 10px;
+    }
+    
+    .grid_contacts .small {
+        font-size: 9px;
+        margin: 3px 10px;
+    }
+    
+    /* -------------------------------------------------=============================--------------------------- */
+    
+    .home-grid2 .grid_skills {
+        
+        margin: 10px;
+        border: 2px solid blue;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        margin: 10px;
+        padding-top: 8px ;
+        color: rgb(0, 0, 0) ;
+    }
+    
+    .grid_skills.active {
+        color: white ;
+        border: 2px solid white;
+    }
+    
+    .grid_skills .text {
+        font-size: 28px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .grid_skills .skill {
+        width: 680px;
+        /* border: 1px solid black; */
+       margin: 0px 3px;
+       /* color: rgb(0, 0, 0); */
+    }
+    
+    .skill .skill_name {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+    
+    
+    
+    .skill .skill_bar {
+        height: 14px;
+        background: rgb(255, 255, 255);
+        border-radius: 4px;
+        border: 1px solid rgb(45, 83, 207);
+        width: 680px;
+        
+    }
+    
+    .skill_per {
+        height: 14px;
+        background-color: rgb(45, 83, 207);
+        border-radius: 4px;
+        position: relative;
+        animation: fillBars 4s 1;
+    }
+    
+    
+    .skill_per::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background-color: rgb(78, 92, 218);
+        color: white;
+        border-radius: 4px;
+        font-size: 12px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+    }
+    
+    
+    
+    
+    
+    .skill_per::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: rgb(78, 92, 218);
+        top: -20;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
+    
+    @keyframes fillBars {
+        from {
+            width: 0;
+        }
+    
+        to {
+            width: 100%;
+        }
+    }
+    
+    
+    /* ---------------------------------------------===================================----------------------------------- */
+    
+    .home-grid2 .grid_send {
+        margin: 10px;
+        border: 2px solid blue;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        padding: 5px 10px;
+        color: black;
+        /* justify-content: center; */
+    }
+    
+    
+    .grid_send .picture3 {
+        background-image: url(./img/chat\ black.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 150px;
+        width: 200px;;
+        margin: 10px auto;
+    }
+    
+    .grid_send button {
+        font-size: 27px;
+        font-weight: 700;
+        background-color: rgb(78, 92, 218);
+        border-radius:26px ;
+        margin:0 55px;
+        padding: 4px;
+    }
+    
+    .grid_send button:hover {
+        background-color: rgb(39, 90, 87);
+        color: white;
+        padding: 5px;
+        margin: 0 53px;
+        cursor: pointer;
+    }
+    
+    
+    
+    /* ----------------------------------------------================================-------------------------------------=====================-------------------------- */
+    
+    .send {
+       background-color: rgba(63, 58, 58, 0.568);
+       width: 100%;
+       height: 100%;
+       display: none;
+       position:absolute;
+       z-index: 1;
+       
+       justify-content: center;
+       text-align: center;
+    }
+    
+    .send .message {
+        width: 440px;
+        height: 550px;
+        border: 1px solid blue;
+        border-radius: 30px;
+        background-color: rgb(20, 18, 18);
+        padding: 5px auto;
+        margin: 80px auto;
+    
+    }
+    
+    .send h1 {
+        color: white;
+        margin: 10px auto;
+    }
+    
+    input {
+        width: 340px;
+        height: 40px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+    
+    textarea {
+        width: 340px;
+        height: 80px;
+        margin-top: 10px;
+    }
+    
+    .message_send {
+        background-color: rgb(250, 8, 8);
+        border-radius: 25px;
+        color: black;
+        font-size: larger;
+        font-weight: 500;
+        width: 200px;
+        margin: 10px auto;
+    }
+    
+    .message_send:hover {
+        cursor: pointer;
+        font-size: x-large;
+        font-weight: 600;
+    }
+    
+    .close {
+       
+        background-color: rgb(34, 29, 29);
+        border-radius: 30px;
+        color: rgb(221, 219, 219);
+        font-size: larger;
+        font-weight: 500;
+        width: 200px;
+        margin: 10px auto;
+        cursor: pointer;
+        
+    }
+    
+    /* ----------------------------=======================----------------------------==============------------- */
+    
+    
+    .project_page {
+        background-color: rgba(63, 58, 58, 0.568);
+        width: 100%;
+        height: 100%;
+        display: none;
+        position:absolute;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .project_page h1 {
+        color: white;
+        font-size: xx-large;
+        margin: 40px auto;
+    }
+    
+    .project_page i {
+        font-size: 40px;
+        color: white;
+        margin-top: 50px;
+    }
+    
+    .project_page i{
+        color: blueviolet;
+        cursor:nw-resize;
+        transition: 0.5s;
+    }
+    
+    
+    
+    .about_page {
+        background-color: rgba(63, 58, 58, 0.568);
+        width: 100%;
+        height: 100%;
+        display: none;
+        position:absolute;
+        justify-content: space-between;
+        padding: 50px 20px;
+    }
+    
+    .about_page .main {
+      border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    
+    .about_page .text {
+       
+        font-size: xx-large;
+        color: aliceblue;
+    }
+    
+    .about_page .small {
+        margin: 10px 0;
+        color: white;
+        font-size: larger;
+        width: 600px;
+    }
+    
+    .about_page .photo {
+        border: 1px solid red;
+        width: 500px;
+        height: 600px;
+        
+    }
+    
+    
+    /* ---------------------------------------------------- ACTIVE ---------------------------------------------- */
+    
+    .home_page.active {
+        background-color: black;
+    }
+    
+    
+    .logo.active {
+        color: white;
+    } 
+    
+    .menu.active {
+        color: white;
+    }
+    
+    .grid_photo.active {
+        background-color: black;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .text .name.active {
+        color: white;
+     }
+    
+     
+    .grid_about.active {
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .btn.active {
+        border: 2px solid white;
+    }
+    
+    .btn.active::before {
+        left: 44%;
+        border: 2px solid rgb(0, 0, 0);
+        background-color: white;   
+    }
+    
+    
+    .grid_project.active {
+        color: white;
+        border: 2px solid white;
+    }
+    
+    .video.active {
+        background-image: url(./img/html.white.png);
+    }
+    
+    .picture2.active {
+        border-radius: 35px;
+        width: 220px;
+        margin: 0 auto;
+        border: 1px solid white;
+       
+    }
+    
+    .grid_contacts.active {
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .grid_contacts .icons.active {
+        color: white;
+    }
+    
+    .grid_send.active {
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .picture3.active {
+        background-image: url(./img/chat_white.png);
+    }
+    
+    .grid_contacts .a.active {
+        color: white;
+    }
+    
+    
+}
